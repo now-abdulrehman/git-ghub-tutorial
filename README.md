@@ -442,3 +442,31 @@ c6de5c0 Update
 444630e Add style.css & script.js
 4c28e56 Add index.html
 
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ ^C
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git add README.md
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git commit -m "Add more Git & GitHub practice code"
+[main 085ffbd] Add more Git & GitHub practice code
+ 1 file changed, 197 insertions(+)
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$
