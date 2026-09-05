@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 12px;
+    background-color: black;
+    color: white;
+}
+
+header {
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    text-align: center;
+    width: max-content;
+    padding: 3px 5px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 0;
+    cursor: default;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+}
+
+header h1 span {
+    color: #c100c1;
+}
+
+main {
+    padding: 25px 0 25px 0;
+}
+
+main .heading {
+    color: #009db1;
+}
+
+main .detail {
+    color: #f0f0f0;
+    margin-bottom: 5px;
+}
