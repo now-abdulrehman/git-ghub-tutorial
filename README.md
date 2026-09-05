@@ -789,3 +789,163 @@ Deleted branch test (was dc9d0cf).
 usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
 $ git branch
 * main
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git add .
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git commit -m "Add more Git & GitHub practice code"
+[main 9b49180] Add more Git & GitHub practice code
+ 1 file changed, 319 insertions(+)
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git log --oneline
+9b49180 (HEAD -> main) Add more Git & GitHub practice code
+dc9d0cf Add img.png
+2647b42 Add audio file
+a5ffe86 New line added
+e64cf22 Add more Git & GitHub practice code
+085ffbd Add more Git & GitHub practice code
+91d359c Add empty img folder
+357f54f Fix color issue
+820212b Add my-files/my-site.html
+c6de5c0 Update
+50215a6 Add .gitignore
+73dae9a Add GitHub practice code
+89bf2f9 Add main heading
+444630e Add style.css & script.js
+4c28e56 Add index.html
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git branch -c feature
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git branch
+  feature
+* main
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git branch -d feature
+Deleted branch feature (was 9b49180).
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git switch -c new
+Switched to a new branch 'new'
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (new)
+$ git branch
+  main
+* new
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (new)
+$ git status
+On branch new
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (new)
+$ git add .
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (new)
+$ git commit -m "Change second line"
+[new e9af941] Change second line
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (new)
+$ git status
+On branch new
+nothing to commit, working tree clean
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (new)
+$ git log --oneline
+e9af941 (HEAD -> new) Change second line
+9b49180 (main) Add more Git & GitHub practice code
+dc9d0cf Add img.png
+2647b42 Add audio file
+a5ffe86 New line added
+e64cf22 Add more Git & GitHub practice code
+085ffbd Add more Git & GitHub practice code
+91d359c Add empty img folder
+357f54f Fix color issue
+820212b Add my-files/my-site.html
+c6de5c0 Update
+50215a6 Add .gitignore
+73dae9a Add GitHub practice code
+89bf2f9 Add main heading
+444630e Add style.css & script.js
+4c28e56 Add index.html
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (new)
+$ git switch main
+Switched to branch 'main'
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git merge new
+Updating 9b49180..e9af941
+Fast-forward
+ index.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git log --oneline
+e9af941 (HEAD -> main, new) Change second line
+9b49180 Add more Git & GitHub practice code
+dc9d0cf Add img.png
+2647b42 Add audio file
+a5ffe86 New line added
+e64cf22 Add more Git & GitHub practice code
+085ffbd Add more Git & GitHub practice code
+91d359c Add empty img folder
+357f54f Fix color issue
+820212b Add my-files/my-site.html
+c6de5c0 Update
+50215a6 Add .gitignore
+73dae9a Add GitHub practice code
+89bf2f9 Add main heading
+444630e Add style.css & script.js
+4c28e56 Add index.html
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git branch -d new
+Deleted branch new (was e9af941).
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git log --oneline
+e9af941 (HEAD -> main) Change second line
+9b49180 Add more Git & GitHub practice code
+dc9d0cf Add img.png
+2647b42 Add audio file
+a5ffe86 New line added
+e64cf22 Add more Git & GitHub practice code
+085ffbd Add more Git & GitHub practice code
+91d359c Add empty img folder
+357f54f Fix color issue
+820212b Add my-files/my-site.html
+c6de5c0 Update
+50215a6 Add .gitignore
+73dae9a Add GitHub practice code
+89bf2f9 Add main heading
+444630e Add style.css & script.js
+4c28e56 Add index.html
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$
