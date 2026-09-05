@@ -470,3 +470,322 @@ nothing to commit, working tree clean
 
 usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
 $
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git log --oneline
+e64cf22 (HEAD -> main) Add more Git & GitHub practice code
+085ffbd Add more Git & GitHub practice code
+91d359c Add empty img folder
+357f54f Fix color issue
+820212b Add my-files/my-site.html
+c6de5c0 Update
+50215a6 Add .gitignore
+73dae9a Add GitHub practice code
+89bf2f9 Add main heading
+444630e Add style.css & script.js
+4c28e56 Add index.html
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git branch test
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git branch
+* main
+  test
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git switch test
+Switched to branch 'test'
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (test)
+$ git branch
+  main
+* test
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (test)
+$ git status
+On branch test
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (test)
+$ git add .
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (test)
+$ git commin -m "New line added"
+git: 'commin' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (test)
+$ git commit -m "New line added"
+[test a5ffe86] New line added
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (test)
+$ git status
+On branch test
+nothing to commit, working tree clean
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (test)
+$ git log --oneline
+a5ffe86 (HEAD -> test) New line added
+e64cf22 (main) Add more Git & GitHub practice code
+085ffbd Add more Git & GitHub practice code
+91d359c Add empty img folder
+357f54f Fix color issue
+820212b Add my-files/my-site.html
+c6de5c0 Update
+50215a6 Add .gitignore
+73dae9a Add GitHub practice code
+89bf2f9 Add main heading
+444630e Add style.css & script.js
+4c28e56 Add index.html
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (test)
+$ git status
+On branch test
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    img/.gitkeep
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (test)
+$ git switch main
+D       img/.gitkeep
+Switched to branch 'main'
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git switch test
+D       img/.gitkeep
+Switched to branch 'test'
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (test)
+$ git switch main
+D       img/.gitkeep
+D       script.js
+Switched to branch 'main'
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    img/.gitkeep
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git switch test
+D       img/.gitkeep
+Switched to branch 'test'
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (test)
+$ git status
+On branch test
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    img/.gitkeep
+        deleted:    script.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (test)
+$ git switch main
+D       img/.gitkeep
+D       script.js
+Switched to branch 'main'
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git switch test
+D       img/.gitkeep
+D       script.js
+Switched to branch 'test'
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (test)
+$ git status
+On branch test
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    img/.gitkeep
+        deleted:    script.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        aud.mp3
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (test)
+$ git add .
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (test)
+$ git commit -m "Add audio file"
+[test 2647b42] Add audio file
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ rename img/.gitkeep => aud.mp3 (100%)
+ delete mode 100644 script.js
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (test)
+$ git switch main
+Switched to branch 'main'
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git log --oneline
+e64cf22 (HEAD -> main) Add more Git & GitHub practice code
+085ffbd Add more Git & GitHub practice code
+91d359c Add empty img folder
+357f54f Fix color issue
+820212b Add my-files/my-site.html
+c6de5c0 Update
+50215a6 Add .gitignore
+73dae9a Add GitHub practice code
+89bf2f9 Add main heading
+444630e Add style.css & script.js
+4c28e56 Add index.html
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git switch test
+Switched to branch 'test'
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (test)
+$ git status
+On branch test
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        img.png
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (test)
+$ git commit -m "Add img.png"
+On branch test
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        img.png
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (test)
+$ git log --oneline
+2647b42 (HEAD -> test) Add audio file
+a5ffe86 New line added
+e64cf22 (main) Add more Git & GitHub practice code
+085ffbd Add more Git & GitHub practice code
+91d359c Add empty img folder
+357f54f Fix color issue
+820212b Add my-files/my-site.html
+c6de5c0 Update
+50215a6 Add .gitignore
+73dae9a Add GitHub practice code
+89bf2f9 Add main heading
+444630e Add style.css & script.js
+4c28e56 Add index.html
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (test)
+$ git add img.png
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (test)
+$ git commit -m "Add img.png"
+[test dc9d0cf] Add img.png
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 img.png
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (test)
+$ git log --oneline
+dc9d0cf (HEAD -> test) Add img.png
+2647b42 Add audio file
+a5ffe86 New line added
+e64cf22 (main) Add more Git & GitHub practice code
+085ffbd Add more Git & GitHub practice code
+91d359c Add empty img folder
+357f54f Fix color issue
+820212b Add my-files/my-site.html
+c6de5c0 Update
+50215a6 Add .gitignore
+73dae9a Add GitHub practice code
+89bf2f9 Add main heading
+444630e Add style.css & script.js
+4c28e56 Add index.html
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (test)
+$ git switch main
+Switched to branch 'main'
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git switch test
+Switched to branch 'test'
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (test)
+$ git merge test
+Already up to date.
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (test)
+$ git switch main
+Switched to branch 'main'
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git merge test
+Updating e64cf22..dc9d0cf
+Fast-forward
+ img/.gitkeep => aud.mp3 | 0
+ script.js => img.png    | 0
+ index.html              | 3 ++-
+ 3 files changed, 2 insertions(+), 1 deletion(-)
+ rename img/.gitkeep => aud.mp3 (100%)
+ rename script.js => img.png (100%)
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git branch
+* main
+  test
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git log --oneline
+dc9d0cf (HEAD -> main, test) Add img.png
+2647b42 Add audio file
+a5ffe86 New line added
+e64cf22 Add more Git & GitHub practice code
+085ffbd Add more Git & GitHub practice code
+91d359c Add empty img folder
+357f54f Fix color issue
+820212b Add my-files/my-site.html
+c6de5c0 Update
+50215a6 Add .gitignore
+73dae9a Add GitHub practice code
+89bf2f9 Add main heading
+444630e Add style.css & script.js
+4c28e56 Add index.html
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git branch -d test
+Deleted branch test (was dc9d0cf).
+
+usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
+$ git branch
+* main
