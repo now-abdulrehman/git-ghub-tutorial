@@ -148,13 +148,13 @@ nothing to commit, working tree clean
 usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
 $ git log
 commit 444630e2d84a28c0b80370c7c4b3e421e0c461b6 (HEAD -> main)
-Author: Abdul Rehman <userar28@gmail.com>
+Author: Abdul Rehman <example@gmail.com>
 Date:   Fri Sep 4 19:38:40 2026 +0500
 
     Add style.css & script.js
 
 commit 4c28e56373fe8782b99ba23fa966fe6c6ecba8c0
-Author: Abdul Rehman <userar28@gmail.com>
+Author: Abdul Rehman <example@gmail.com>
 Date:   Fri Sep 4 19:37:01 2026 +0500
 
     Add index.html
@@ -214,19 +214,19 @@ nothing to commit, working tree clean
 usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
 $ git log
 commit 89bf2f999745b6ff242644be04b5f2784e9a1d3a (HEAD -> main)
-Author: Abdul Rehman <userar28@gmail.com>
+Author: Abdul Rehman <example@gmail.com>
 Date:   Fri Sep 4 20:06:27 2026 +0500
 
     Add main heading
 
 commit 444630e2d84a28c0b80370c7c4b3e421e0c461b6
-Author: Abdul Rehman <userar28@gmail.com>
+Author: Abdul Rehman <example@gmail.com>
 Date:   Fri Sep 4 19:38:40 2026 +0500
 
     Add style.css & script.js
 
 commit 4c28e56373fe8782b99ba23fa966fe6c6ecba8c0
-Author: Abdul Rehman <userar28@gmail.com>
+Author: Abdul Rehman <example@gmail.com>
 Date:   Fri Sep 4 19:37:01 2026 +0500
 
     Add index.html
@@ -274,25 +274,25 @@ $ git log --oneline
 usera@NOW MINGW64 ~/Documents/1-MyCode/Git/git-ghub-tutorial (main)
 $ git log
 commit 73dae9a8b56e065eef8c6119e44278b70617b1a1 (HEAD -> main)
-Author: Abdul Rehman <userar28@gmail.com>
+Author: Abdul Rehman <example@gmail.com>
 Date:   Fri Sep 4 21:39:21 2026 +0500
 
     Add GitHub practice code
 
 commit 89bf2f999745b6ff242644be04b5f2784e9a1d3a
-Author: Abdul Rehman <userar28@gmail.com>
+Author: Abdul Rehman <example@gmail.com>
 Date:   Fri Sep 4 20:06:27 2026 +0500
 
     Add main heading
 
 commit 444630e2d84a28c0b80370c7c4b3e421e0c461b6
-Author: Abdul Rehman <userar28@gmail.com>
+Author: Abdul Rehman <example@gmail.com>
 Date:   Fri Sep 4 19:38:40 2026 +0500
 
     Add style.css & script.js
 
 commit 4c28e56373fe8782b99ba23fa966fe6c6ecba8c0
-Author: Abdul Rehman <userar28@gmail.com>
+Author: Abdul Rehman <example@gmail.com>
 Date:   Fri Sep 4 19:37:01 2026 +0500
 
     Add index.html
